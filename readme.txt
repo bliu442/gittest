@@ -30,6 +30,9 @@ Q退出git log界面
 切换分支：git checkout <name>
 创建+切换分支：git checkout -b <name>
 合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+解决冲突:分支对文件进行更改，master对该文件也进行了更改，git无法进行快速合并
 
 这是第一行
 这是第二行
