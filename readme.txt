@@ -4,6 +4,9 @@ ctrl + · 打开终端 ·是键盘上esc下面的那个
 ctrl + Shift + · 推出终端
 E325错误 git在指令意外中断时，一般会有一个缓存的机制，它会记住上次中断的问题。在下次进入vim指令时，如果很重要的中断一般会提示你前面有某个操作不当或者没有结束
 解决：删除根目录下的.git文件夹.COMMIT_EDITMSG.swp     rm .git/.COMMIT_EDITMSG.swp 
+git项目初次push error: failed to push some refs to 'https://github.com/bliu442/gittest.git'
+解决1.git push -f origin master强制将本地文件推送至远程，这样会将远程仓库的已有的文件清掉 
+2.git pull origin master –allow-unrelated-histories 使用此命令告诉 git 允许不相关历史合并 这样就能把远程文件拉取回来。执行此命令后会有一个提示，要求说明为何要讲两个不相关的分支合并，输入信息后保存即可。
 
 git add +文件名/文件夹名 将该文件/文件夹 所有改动暂存
 git commit -m "版本说明" 将当前暂存区提交到本地库 每次使用git commit 命令我们都会在本地版本库生成一个40位的哈希值，这个哈希值也叫commit-id
@@ -35,7 +38,8 @@ Q退出git log界面
 
 远程操作
 git remote add origin https://github.com/bliu442/gittest.git 增加了与远程仓库gittest关联
-git remote remove gittest移除远端仓库关联
+git remote remove gittest 移除远端仓库关联
+git push -u origin master 将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库
 
 这是第一行
 这是第二行
