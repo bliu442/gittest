@@ -24,6 +24,13 @@ git reset HEAD file 把暂存区的修改撤销掉
 git log  查看版本记录 (HEAD -> master)所在行是当前版本
 Q退出git log界面
 
+分支操作
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+
 这是第一行
 这是第二行
 
