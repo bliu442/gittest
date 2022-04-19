@@ -31,8 +31,11 @@ Q退出git log界面
 创建+切换分支：git checkout -b <name>
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
-
 解决冲突:分支对文件进行更改，master对该文件也进行了更改，git无法进行快速合并
+
+远程操作
+git remote add origin https://github.com/bliu442/gittest.git 增加了与远程仓库gittest关联
+git remote remove gittest移除远端仓库关联
 
 这是第一行
 这是第二行
