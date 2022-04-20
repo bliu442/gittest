@@ -40,6 +40,7 @@ Q退出git log界面
 git remote add origin https://github.com/bliu442/gittest.git 增加了与远程仓库gittest关联
 git remote remove gittest 移除远端仓库关联
 git push -u origin master 将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库
+git pull origin master 把远程分支master上的代码下载并合并到本地所在分支
 
 这是第一行
 这是第二行
